@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="4dp"
+    android:weightSum="100"
+    tools:context=".ui.MainActivity">
+
+    <com.viewpagerindicator.TitlePageIndicator
+        android:id="@+id/titles"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        app:footerIndicatorHeight="3dp"
+        android:background="#004D40"
+        app:footerIndicatorStyle="none"
+        app:footerLineHeight="0dp" />
+
+    <com.suraj.rtp.ui.CustomViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titles"
+        android:layout_weight="1"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" />
+
+</RelativeLayout>

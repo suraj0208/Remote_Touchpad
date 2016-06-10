@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".ui.MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="99"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <com.suraj.rtp.ui.TouchPanel
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9999"
+            android:text="Touch area"
+            android:textSize="@dimen/abc_text_size_large_material" />
+
+        <Button
+            android:id="@+id/btnscroll"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:text="s\nc\nr\no\nl\nl"
+            android:textSize="@dimen/abc_text_size_large_material" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btnlclick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lclick" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btnrclick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rclick" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

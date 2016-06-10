@@ -1,0 +1,204 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="15dp"
+    android:weightSum="100"
+    tools:context=".ui.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/btnctrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CTRL" />
+
+        <Button
+            android:id="@+id/btnalt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ALT" />
+
+        <Button
+            android:id="@+id/btnsuper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Super" />
+
+        <Button
+            android:id="@+id/btndel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="BkSpace" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/btnshutdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TurnOff" />
+
+        <Button
+            android:id="@+id/btnreboot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Reboot" />
+
+        <Button
+            android:id="@+id/btnlock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Lock" />
+
+        <Button
+            android:id="@+id/btnclose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Close" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="8">
+
+        <Button
+            android:id="@+id/btnf1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="F1" />
+
+        <Button
+            android:id="@+id/btnf2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="F2" />
+
+        <Button
+            android:id="@+id/btnf3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="F3" />
+
+        <Button
+            android:id="@+id/btnf4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="F4" />
+
+        <Button
+            android:id="@+id/btnf5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="F5" />
+
+        <Button
+            android:id="@+id/btnf6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="F6" />
+
+        <Button
+            android:id="@+id/btnf7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="F7" />
+
+        <Button
+            android:id="@+id/btnf8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="F8" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/btndelete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Delete" />
+
+        <Button
+            android:id="@+id/btnup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="UP" />
+
+        <Button
+            android:id="@+id/btnenter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Enter" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/btnleft"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Left" />
+
+        <Button
+            android:id="@+id/btndown"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Down" />
+
+        <Button
+            android:id="@+id/btnright"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Right" />
+
+    </LinearLayout>
+
+    <com.suraj.rtp.ui.CustomEditText
+        android:id="@+id/etkeyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textVisiblePassword" />
+</LinearLayout>
